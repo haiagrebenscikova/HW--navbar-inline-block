@@ -1,0 +1,35 @@
+body {
+    background-color: #333;
+    font-family:'Noto Sans HK', sans-serif;
+    }
+.navbar {
+    background-color: #666;
+    font-size: 25px;
+    text-shadow:2px 2px 2px black; 
+    text-align: right;
+    }
+.navbar li {
+    display: inline-block;
+    padding: 30px 10px;
+    vertical-align: middle;
+    }
+.navbar a {
+    color: white;
+    text-decoration: none;
+    }
+.image {
+    vertical-align: middle;
+    padding-right: 15px;
+    }
+.navbar a::after {
+    content:"";
+    display: block;
+    border-bottom: 2px solid transparent;
+    transform: translateX(-100%);
+    transition: 0,5s;
+    }
+.navbar a:hover::after {
+    display: block;
+    border-bottom-color: white;
+    transform: translateX(0);
+    }
